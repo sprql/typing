@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Typing</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+
+    <!--jscss-->
+    <link charset="utf-8" href="stylesheets/typing.css" media="screen" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="javascripts/jquery.js"></script>
+    <script type="text/javascript" src="javascripts/string.js"></script>
+    <script type="text/javascript" src="javascripts/timer.js"></script>
+    <script type="text/javascript" src="javascripts/typing.js"></script>
+    <script type="text/javascript" src="javascripts/typing/input.js"></script>
+    <script type="text/javascript" src="javascripts/typing/indicator.js"></script>
+    <script type="text/javascript" src="javascripts/typing/lesson.js"></script>
+    <script type="text/javascript" src="javascripts/typing/key.js"></script>
+    <script type="text/javascript" src="javascripts/typing/keyboard.js"></script>
+    <script type="text/javascript" src="javascripts/typing/mapping.js"></script>
+    <script type="text/javascript" src="javascripts/typing/ui.js"></script>
+    <script type="text/javascript" src="javascripts/typing/layouts.js"></script>
+    <script type="text/javascript" src="javascripts/typing/layouts/typematrix.dvorak.js"></script>
+    <script type="text/javascript" src="javascripts/typing/layouts/typematrix.russian.js"></script>
+    <script type="text/javascript" src="javascripts/typing/layouts/typematrix.qwerty.js"></script>
+    <script type="text/javascript" src="javascripts/typing/layouts/dvorak.js"></script>
+    <script type="text/javascript" src="javascripts/typing/layouts/russian.js"></script>
+    <script type="text/javascript" src="javascripts/typing/layouts/qwerty.js"></script>
+    <script type="text/javascript" src="javascripts/typing/lessons.js"></script>
+    <script type="text/javascript" src="javascripts/typing/lessons/special.js"></script>
+    <script type="text/javascript" src="javascripts/typing/lessons/enbooks.js"></script>
+    <script type="text/javascript" src="javascripts/typing/lessons/rubooks.js"></script>
+    <script type="text/javascript" src="javascripts/typing/lessons/dvorak.js"></script>
+    <script type="text/javascript" src="javascripts/typing/lessons/qwerty.js"></script>
+    <script type="text/javascript" src="javascripts/typing/lessons/russian.js"></script>
+    <script type="text/javascript" src="javascripts/typing/exercises.js"></script>
+    <!--jscss-->
+</head>
+
+<body>
+
+<div class="typing">
+
+    <h1>Typing</h1>
+
+    <div class="control">
+        <span class="select layout">
+            <strong>Layout:</strong> <i></i>
+        </span><span class="select lesson">
+            <strong>Lesson:</strong> <i></i>
+        </span><span class="select mapping">
+            <strong>Mapping:</strong> <i></i>
+        </span>
+    </div>
+
+    <div class="control">
+
+        <button class="reload">Restart</button>
+
+        <span class="indicators">
+            <span class="indicator progress" title="Lesson Progress">
+                Progress: <span class="value"></span> %
+            </span><span class="indicator errors-counter" title="Typing Error Count">
+                Errors: <span class="value"></span> %
+            </span><span class="indicator timer" title="Elapsed Time">
+                Time: <span class="value"></span>
+            </span><span class="indicator speedometer" title="Typing Speed (Symbols Per Minute)">
+                Speed: <span class="value"></span> SPM
+            </span>
+        </span>
+
+    </div>
+
+    <div class="lesson">
+        <div class="text"></div>
+    </div>
+
+    <div class="keyboard">
+        <div class="layout-wrapper">
+            <div class="layout"></div>
+        </div>
+    </div>
+</div>
+
+<script id="main">
+    var typing = new Typing();
+
+    typing.placeholder.selectLayout = $('.select.layout i');
+    typing.placeholder.selectLesson = $('.select.lesson i');
+    typing.placeholder.selectMapping = $('.select.mapping i');
+
+    typing.button.reload = $('button.reload');
+
+    typing.indicator.progress.placeholder = $('.indicator.progress .value');
+    typing.indicator.timer.placeholder = $('.indicator.timer .value');
+    typing.indicator.speedometer.placeholder = $('.indicator.speedometer .value');
+    typing.indicator.errors.placeholder = $('.indicator.errors-counter .value');
+
+    typing.lesson.placeholder = $('.lesson .text');
+    typing.keyboard.placeholder = $('.keyboard .layout');
+
+    typing.run();
+</script>
+
+</body>
+</html>

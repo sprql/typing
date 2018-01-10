@@ -1,0 +1,132 @@
+body {
+    padding: 0;
+    margin: 0;
+    color: #241412;
+    font: normal 13px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+.typing {
+    }
+
+.typing .control {
+    }
+    .typing .control .select {
+        vertical-align: top;
+        display: inline-block;
+        margin: 0 6px 6px 0;
+        }
+    .typing .control .select strong {
+        display: block;
+        font-weight: normal;
+        color: #888a85;
+        font-size: 12px;
+        }
+    .typing .control .select select {
+        font-style: normal;
+        width: 120px;
+        }
+    .typing .control .select.mapping {
+        margin-right: 0;
+        }
+
+.typing .indicators {
+    display: inline-block;
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #888a85;
+    }
+
+.typing .indicator {
+    display: inline-block;
+    padding: 0 4px;
+    background: #f0f0f0;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    text-align: right;
+    min-width: 3em;
+    margin: 0 6px 6px 0;
+    }
+    .typing .indicator .value {
+        color: #2e3436;
+        }
+    .typing .indicator.progress {
+        }
+    .typing .indicator.timer {
+        }
+    .typing .indicator.speedometer {
+        min-width: 5em;
+        }
+    .typing .indicator.errors-counter {
+        background: #fff0f0;
+        }
+
+.typing button.reload {
+    font-size: 11px;
+    margin: 0 6px 6px 0;
+    }
+
+
+.typing .lesson {
+    }
+.typing .lesson .text {
+    display: block;
+    position: relative;
+    height: 77px;
+    clear: both;
+    margin: 0 0 14px;
+    padding: 6px 0;
+    overflow: hidden;
+    overflow-y: auto;
+    border: 1px solid #f0f0f0;
+    border-width: 1px 0;
+    color: #533;
+    font-size: 13px;
+    line-height: 130%;
+    font-family:  Monaco, Bitstream Vera Sans Mono, Consolas, monospace;
+    letter-spacing: 0.1em;
+    }
+    .typing .lesson .text .typed {
+        color: #cbb;
+        }
+        .typing .lesson .text .typed .invalid {
+            background: #c00;
+            color: #fff;
+            }
+    .typing .lesson .text .marker {
+        border-bottom: 2px solid #0ad;
+        }
+.typing .lesson textarea {
+    position: absolute;
+    background: transparent;
+    border: none;
+    opacity: 0;
+    z-index: 100;
+    }
+.typing .lesson .text.focused {
+    border-color: #c00;
+    }
+
+.typing .layout-wrapper {
+    text-align: center;
+    }
+.typing .keyboard {
+    display: none;
+    }
+
+.typing .congratulation {
+    color: #c00;
+    }
+
+.typing .splash {
+    text-align: center;
+    line-height: 77px;
+    background: #f0f0f5;
+    border: 1px solid #ccc;
+    }
+
+
+.copyright {
+    margin-top: 35px;
+    font-size: 12px;
+    color: #888a85;
+    }

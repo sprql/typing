@@ -1,0 +1,176 @@
+body {
+    padding: 0;
+    margin: 0;
+    color: #241412;
+    font: normal 14px/21px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+.typing {
+    width: 466px;
+    margin: 0 auto;
+    }
+
+.typing h1 {
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 21px;
+    margin-bottom: 14px;
+    }
+
+.typing .control {
+    margin: 0 0 1em;
+    white-space: nowrap;
+    }
+    .typing .control .select {
+        vertical-align: top;
+        display: inline-block;
+        margin-right: 14px;
+        }
+    .typing .control .select strong {
+        display: block;
+        font-weight: normal;
+        color: #888a85;
+        font-size: 12px;
+        }
+    .typing .control .select select {
+        font-style: normal;
+        width: 146px;
+        }
+    .typing .control .select.mapping {
+        margin-right: 0;
+        }
+
+.typing .indicators {
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #888a85;
+    }
+
+.typing .indicator {
+    display: inline-block;
+    padding: 0 4px;
+    background: #f0f0f0;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    text-align: right;
+    min-width: 3em;
+    margin-right: 14px;
+    }
+    .typing .indicator .value {
+        color: #2e3436;
+        }
+    .typing .indicator.progress {
+        }
+    .typing .indicator.timer {
+        }
+    .typing .indicator.speedometer {
+        min-width: 5em;
+        }
+    .typing .indicator.errors-counter {
+        background: #fff0f0;
+        }
+
+.typing button.reload {
+    float: right;
+    font-size: 11px;
+    }
+
+
+.typing .lesson {
+    }
+.typing .lesson .text {
+    display: block;
+    height: 77px;
+    clear: both;
+    margin: 0 0 14px;
+    padding: 6px 0;
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+    border: 1px solid #f0f0f0;
+    border-width: 1px 0;
+    color: #533;
+    font-size: 16px;
+    line-height: 130%;
+    font-family:  Monaco, Bitstream Vera Sans Mono, Consolas, monospace;
+    letter-spacing: 0.1em;
+    }
+    .typing .lesson .text .typed {
+        color: #cbb;
+        }
+        .typing .lesson .text .typed .invalid {
+            background: #c00;
+            color: #fff;
+            }
+    .typing .lesson .text .marker {
+        border-bottom: 2px solid #0ad;
+        }
+
+
+.typing .layout-wrapper {
+    text-align: center;
+    }
+.typing .layout {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left;
+    }
+    .typing .layout .row {
+        display: block;
+        }
+        .typing .layout .key-box {
+            display: inline-block;
+            width: 26px;
+            height: 26px;
+            vertical-align: top;
+            text-align: center;
+            border: 1px solid #f0f0f0;
+            border-radius: 4px;
+            -moz-border-radius: 4px;
+            margin: 0 4px 4px 0;
+            color: #ccc;
+            overflow: hidden;
+            }
+            .typing .layout .key-box.blank {
+                border: 0;
+                background: none;
+                width: 14px;
+                margin-right: 2px;
+                }
+            .typing .layout .key {
+                display: block;
+                overflow: hidden;
+                font-family: Helvetica;
+                font-size: 14px;
+                line-height: 26px;
+                width: 26px;
+                height: 26px;
+                vertical-align: top;
+                }
+                .typing .layout .key.active {
+                    color: #333;
+                    }
+                .typing .layout .key.highlight {
+                    background: #f0f0f0;
+                    }
+                .typing .layout .key.shift {
+                    display: none;
+                    text-transform: uppercase;
+                    }
+                    .typing .layout.shift-mode .key {
+                        display: none;
+                        }
+                    .typing .layout.shift-mode .key.shift {
+                        display: inline-block;
+                        }
+
+.typing .congratulation {
+    color: #c00;
+    }
+
+.copyright {
+    margin-top: 35px;
+    font-size: 12px;
+    color: #888a85;
+    }
